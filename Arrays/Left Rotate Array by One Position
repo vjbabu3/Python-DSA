@@ -1,20 +1,10 @@
-Left Rotate Array by One Position
-public class Main {
+arr = [1, 2, 3, 4, 5]
 
-    public static void main(String[] args) {
+first = arr[0]
 
-        int[] arr = {1,2,3,4,5};
+for i in range(len(arr) - 1):
+    arr[i] = arr[i + 1]
 
-        int first = arr[0];
+arr[len(arr) - 1] = first
 
-        for(int i = 0; i < arr.length - 1; i++) {
-            arr[i] = arr[i + 1];
-        }
-
-        arr[arr.length - 1] = first;
-
-        for(int num : arr) {
-            System.out.print(num + " ");
-        }
-    }
-}
+print(arr)
